@@ -5,13 +5,27 @@ body {
 }
 
 .eyes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
 }
-.eye {
+.left-eye {
+  grid-column: 1 / 2;
+  width: 240px;
+  height: 120px;
+  background: #fff;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.right-eye {
+  grid-column: 2 / 3;
   width: 240px;
   height: 120px;
   background: #fff;

@@ -1,3 +1,11 @@
+function changeColor(colorButton) {
+    let irisColor = colorButton
+    let leftIris = document.getElementById("left-pupil-and-iris");
+    let rightIris = document.getElementById("right-pupil-and-iris");
+    leftIris.style.borderColor = irisColor;
+    rightIris.style.borderColor = irisColor;
+}
+
 var balls = document.getElementsByClassName("ball");
     document.onmousemove = () => {
       var x = (event.clientX * 100) / window.innerWidth + "%";
